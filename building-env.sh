@@ -6,7 +6,7 @@ DIR=/root/
 sudo apt-get update 
 apt-get install autoconf cmake make automake libtool git \
 libboost-all-dev libssl-dev g++ libcurl4-openssl-dev htop \
-screen unzip iotop htop -y
+screen unzip iotop htop joe -y
 
 #Building swap
 
@@ -29,6 +29,3 @@ sudo sysctl vm.vfs_cache_pressure=35 #Pressure on balance between RAM and SWAP
 sudo echo "vm.swappiness = 30" | sudo tee -a /etc/sysctl.conf #Adding it to the system startup as default value
 sudo echo "vm.vfs_cache_pressure = 35" | sudo tee -a /etc/sysctl.conf #Addint it to the system startup as default value
 sudo echo "/meta1api/swap none swap sw 0 0" | sudo tee -a /etc/fstab #system boot - swap partition init
-
-#Reboot in 1 minute
-sudo shutdown -r +1
