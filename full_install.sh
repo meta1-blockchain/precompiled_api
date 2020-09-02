@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chmod a+x .sh
+chmod a+x *.sh
 ./building-env.sh
 
 echo ""
