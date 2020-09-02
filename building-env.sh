@@ -3,9 +3,10 @@ DIR=/root/
 
 #Preparing Ubuntu 20 Environment
 
-sudo apt-get update && apt-get autoconf cmake make automake libtool git \
-                                libboost-all-dev libssl-dev g++ libcurl5-openssl-dev htop \
-                                screen unzip iotop htop -y
+sudo apt-get update 
+apt-get install autoconf cmake make automake libtool git \
+libboost-all-dev libssl-dev g++ libcurl4-openssl-dev htop \
+screen unzip iotop htop -y
 
 #Building swap
 
